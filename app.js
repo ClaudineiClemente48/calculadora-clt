@@ -1,16 +1,5 @@
-function fnHorasExtras(salario, horastrabalhadas, cargahoraria) {
-    let horasextras = 0
-    if(horastrabalhadas > cargahoraria){
-        horasextras = (horastrabalhadas - cargahoraria) * salario
-    }
 
-    return horasextras
-}
 
-function fnFormatarMonetario(valor){
-    console.log(valor)
-    return valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
-}
 
 document.getElementById('bt-calcular').addEventListener('click', function(){
     
